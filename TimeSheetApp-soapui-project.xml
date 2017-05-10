@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="df395bf3-318b-4254-9294-6cb1c2c16be5" activeEnvironment="Default" name="TimeSheetApp" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="4f9b03c3-e9dc-4c87-a981-bd7723dc82da" wadlVersion="http://wadl.dev.java.net/2009/02" name="Get-AllEmployee" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://shielded-harbor-21142.herokuapp.com</con:endpoint></con:endpoints><con:resource name="All" path="/employees/all" id="d95020ec-cdf7-4316-878b-3c742ec393f1"><con:settings/><con:parameters/><con:method name="All 1" id="22667118-a036-4ffd-9e6a-9fdc9bea044f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="87d00e7f-ec27-4a86-ac00-1f67992c6248" mediaType="application/json"><con:settings/><con:endpoint>https://shielded-harbor-21142.herokuapp.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="26a95cac-e3af-46f1-9bc4-6c66a263edfa" wadlVersion="http://wadl.dev.java.net/2009/02" name="Post-NewEmployee" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://shielded-harbor-21142.herokuapp.com</con:endpoint></con:endpoints><con:resource name="Create" path="/employees/create" id="9380e668-bbbc-4b34-b0a2-ef6fbe2f4b71"><con:settings/><con:parameters/><con:method name="Create 1" id="199adef4-3ea6-4850-83c2-b9156736d90f" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="a589d4a5-eb69-4de0-80a0-696486c50a85" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://shielded-harbor-21142.herokuapp.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="d66afc61-dfc1-4343-bd09-d1338124369a" wadlVersion="http://wadl.dev.java.net/2009/02" name="Delete-Employee" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://shielded-harbor-21142.herokuapp.com</con:endpoint></con:endpoints><con:resource name="Delete" path="/employees/delete" id="12b63767-2780-4e46-9e04-de07b4714434"><con:settings/><con:parameters/><con:method name="Delete 1" id="a0ae0c92-920e-46e5-bb5d-a7861cc35f18" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:del="https://shielded-harbor-21142.herokuapp.com/employees/delete">del:Fault</con:element></con:representation><con:request name="Request 1" id="3be3b0e4-2172-4bf1-95d8-032673b1cdfd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://shielded-harbor-21142.herokuapp.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="d6f8bb45-bce7-41b2-9fa2-d5dbb269ce57" name="TimeSheetApp-TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="acea1468-5eaa-408f-b84a-0670d8b525c1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TimeSheetApp-TestCase" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Get-AllEmployee" id="06b5608b-2acf-449e-9448-f6e1886ac9eb"><con:settings/><con:config service="Get-AllEmployee" resourcePath="/employees/all" methodName="All 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get-AllEmployee" id="87d00e7f-ec27-4a86-ac00-1f67992c6248" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://shielded-harbor-21142.herokuapp.com</con:endpoint><con:request/><con:originalUri>https://shielded-harbor-21142.herokuapp.com/employees/all</con:originalUri><con:assertion type="Simple Contains" id="38cc4815-af35-4e88-b38f-052c0841c4e3" name="Contains"><con:configuration><token>Developer</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="ac5ff12e-1a41-4d11-bef5-c1db5a3cb1f6" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Post-NewEmployee" id="cc06c74f-d10f-42f4-a02a-608e1a68d618"><con:settings/><con:config service="Post-NewEmployee" resourcePath="/employees/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Post-NewEmployee" id="a589d4a5-eb69-4de0-80a0-696486c50a85" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://shielded-harbor-21142.herokuapp.com</con:endpoint><con:request>{  
+  "email": "${Email}",  
+  "firstName": "${FirstName}",  
+  "gender": "${Gender}",  
+  "lastName": "${LastName}",  
+  "role": "${Role}"
+  }
+</con:request><con:originalUri>https://shielded-harbor-21142.herokuapp.com/employees/create</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="22ac5b02-8616-4d53-8c5b-1f8fa8829b4f" name="Valid HTTP Status Codes"><con:configuration><codes>204</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Delete-NewEmployee" id="f9187129-f4fa-4cf5-88ab-db492cb9f6ac"><con:settings/><con:config service="Delete-Employee" resourcePath="/employees/delete" methodName="Delete 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete-NewEmployee" id="3be3b0e4-2172-4bf1-95d8-032673b1cdfd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://shielded-harbor-21142.herokuapp.com</con:endpoint><con:request> {
+ 	 "email": "",
+      "firstName": "",
+       "gender": "",
+      "lastName": "",
+      "role": ""
+   }</con:request><con:originalUri>https://shielded-harbor-21142.herokuapp.com/employees/delete</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="88894126-6bc8-48e6-bcec-dcd208bc80e3" name="Valid HTTP Status Codes"><con:configuration><codes>500</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="42984c7a-e509-423f-9a0e-28d95913a8e8"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+def responseContent = testRunner.testCase.getTestStepByName("Get-AllEmployee").getPropertyValue("Response")
+def employeeData = new JsonSlurper().parseText(responseContent)
+for(int i = 0; i  &lt; employeeData.size(); i++) {	
+if ( employeeData.get(i).firstName == "Zah") {		
+	def firstName = employeeData.get(i).firstName		
+	log.info("   "+"Employee First Name = "+"   "+firstName)          	
+	com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "FirstName", firstName )
+  }
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Static-EmpData-post" id="a2ed63ca-999c-44a9-93ba-5306f33d6246"><con:settings/><con:config><script>def firstName = "Jas"
+def lastName ="Sha"
+def gender= "female"
+def role="Tester"
+def email="jas@gmail.com"
+log.info("Employee firstName : "+ "" +firstName)
+log.info("Employee lastName : "+ "" +lastName)
+log.info("Employee gender : "+ "" +gender)
+log.info("Employee role : "+ " "+ role)
+log.info("Employee email :" + ""+email)
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("FirstName", firstName)
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("LastName", lastName)
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("Gender", gender)
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("Role", role)
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("Email", email)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Dynamic-Empdata-DELETE-Teststep" id="00c802f6-3ebd-421d-a7fa-a7598bb64e49"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+def responseContent = testRunner.testCase.getTestStepByName("Get-AllEmployee").getPropertyValue("Response")
+def employeeData = new JsonSlurper().parseText(responseContent)
+for(int i = 0; i  &lt; employeeData.size(); i++) {	
+if ( employeeData.get(i).firstName == "Zah") {		
+	def emailToDelete = employeeData.get(i).email
+	def firstNameToDelete = employeeData.get(i).firstName
+	def genderToDelete = employeeData.get(i).gender
+	def lastNameToDelete = employeeData.get(i).lastName
+	def roleToDelete = employeeData.get(i).role
+			
+	log.info("   "+"EmailToDelete = "+"   "+emailToDelete)
+	log.info("   "+"FirstNameToDelete = "+"   "+firstNameToDelete)
+	log.info("   "+"GenderToDelete = "+"   "+genderToDelete)
+	log.info("   "+"lastNameToDelete = "+"   "+lastNameToDelete)
+	log.info("   "+"RoleToDelete = "+"   "+roleToDelete)
+	          	
+	com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "EmailToDelete",emailToDelete  )
+	com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "FirstNameToDelete",firstNameToDelete  )
+	com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "GenderToDelete",genderToDelete )
+	com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "lastNameToDelete",lastNameToDelete )
+	com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "RoleToDelete",roleToDelete  )
+	
+  }
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
